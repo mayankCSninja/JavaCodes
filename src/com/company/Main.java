@@ -5,6 +5,8 @@ public class Main {
 	// write your code here
         System.out.println("hello mayank");
         System.out.println("hello new");
-        System.out.println("jnn");
+        System.out.println("jnn11");
+        //git status - files added or not, git add . - files to be commited,
+
     }
 }

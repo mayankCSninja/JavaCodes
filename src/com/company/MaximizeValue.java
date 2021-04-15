@@ -32,6 +32,9 @@ public class MaximizeValue {
             else {
                 suffix_max[i] = Math.max(suffix_max[i+1],array[i]);
             }
+        }
+        //printing Suffix max
+        for (int i=0;i< array.length;i++){
             System.out.print(suffix_max[i]+ " ");
         }
         System.out.println();

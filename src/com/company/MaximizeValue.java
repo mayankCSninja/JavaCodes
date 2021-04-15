@@ -4,7 +4,7 @@ public class MaximizeValue {
         int[] array = {-6,3,7,-3,4};
         int p = -2, q=5, r=4;
 
-        int[] sum= new int[array.length-1];
+        int sum;
         int max=array[0];
 
         //Prefix Max
@@ -41,11 +41,11 @@ public class MaximizeValue {
 
         //for middle term, finding max sum
         for(int mid = 1; mid <= array.length-2;mid++){
-            sum[mid]=prefix_max[mid-1]+q*array[mid]+suffix_max[mid+1];
-            if (sum[mid]>max){
-                max=sum[mid];
+            sum =prefix_max[mid-1]+q*array[mid]+suffix_max[mid+1];
+            if (sum>max){
+                max=sum;
             }
-            System.out.println("sum = " +sum[mid]);
+            System.out.println("sum = " +sum);
 
         }
         System.out.println("Max sum possible = " +max);

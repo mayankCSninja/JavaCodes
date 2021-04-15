@@ -27,7 +27,7 @@ public class MaximizeValue {
         System.out.print("Suffix_max array = ");
         for (int i= array.length-1; i>=0;i--){
             if(i== array.length-1){
-                suffix_max[i] = Math.max(r*array[i-1],r*array[i]);
+                suffix_max[i] = r*array[i];
             }
             else {
                 suffix_max[i] = Math.max(suffix_max[i+1],r*array[i]);
